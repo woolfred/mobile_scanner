@@ -1,11 +1,12 @@
 # mobile_scanner
+# Includes the unbundled MLKit scanner!
 
 [![pub package](https://img.shields.io/pub/v/mobile_scanner.svg)](https://pub.dev/packages/mobile_scanner)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
 [![mobile_scanner](https://github.com/juliansteenbakker/mobile_scanner/actions/workflows/flutter.yml/badge.svg)](https://github.com/juliansteenbakker/mobile_scanner/actions/workflows/flutter.yml)
 [![GitHub Sponsors](https://img.shields.io/github/sponsors/juliansteenbakker?label=like%20my%20work?%20sponsor%20me!)](https://github.com/sponsors/juliansteenbakker)
 
-A universal scanner for Flutter based on MLKit. Uses CameraX on Android and AVFoundation on iOS. 
+A universal scanner for Flutter based on MLKit. Uses CameraX on Android and AVFoundation on iOS.
 
 
 ## Features Supported
@@ -35,20 +36,20 @@ To use this version you must alter the mobile_scanner gradle file to replace `co
 ### iOS
 **Add the following keys to your Info.plist file, located in <project root>/ios/Runner/Info.plist:**
 NSCameraUsageDescription - describe why your app needs access to the camera. This is called Privacy - Camera Usage Description in the visual editor.
-  
+
 **If you want to use the local gallery feature from [image_picker](https://pub.dev/packages/image_picker)**
 NSPhotoLibraryUsageDescription - describe why your app needs permission for the photo library. This is called Privacy - Photo Library Usage Description in the visual editor.
-  
+
   Example,
   ```
   <key>NSCameraUsageDescription</key>
   <string>This app needs camera access to scan QR codes</string>
-  
+
   <key>NSPhotoLibraryUsageDescription</key>
   <string>This app needs photos access to get QR code from photo library</string>
   ```
-  
-  
+
+
 ### macOS
 Ensure that you granted camera permission in XCode -> Signing & Capabilities:
 
